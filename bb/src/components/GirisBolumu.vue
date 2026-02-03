@@ -6,6 +6,15 @@ const email = ref('')
 
 // Butona basınca çalışacak fonksiyon
 const kayitOl = () => {
+
+  // Regex: İçinde @ ve . var mı diye bakar
+  const emailKural = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+  
+  if (!emailKural.test(email.value)) {
+    alert("Lütfen geçerli bir email adresi girin!") // İstersen bunu da Toast mesajı yapabilirsin
+    return
+  }
+  
   alert(`Kayıt olunan email: ${email.value}`)
 }
 </script>
