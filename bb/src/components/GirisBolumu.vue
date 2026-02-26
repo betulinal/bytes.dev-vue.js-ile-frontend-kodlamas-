@@ -11,7 +11,7 @@ const kayitOl = () => {
   const emailKural = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
   
   if (!emailKural.test(email.value)) {
-    alert("Lütfen geçerli bir email adresi girin!") // İstersen bunu da Toast mesajı yapabilirsin
+    alert("Lütfen geçerli bir email adresi girin!") 
     return
   }
   
