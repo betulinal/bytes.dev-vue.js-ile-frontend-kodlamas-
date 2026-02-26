@@ -6,10 +6,9 @@ body {
   color: white;
   /* Yazılar varsayılan beyaz olsun */
   font-family: sans-serif;
-  /* İstersen Google Fonts'tan font ekleriz sonra */
+
 }
 
-/* Webkit tarayıcılar (Chrome, Safari, Edge) için Scrollbar Tasarımı */
 ::-webkit-scrollbar {
   width: 8px;
   /* Çubuğun genişliği */
